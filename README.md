@@ -74,15 +74,16 @@ This dashboard provides a comprehensive overview of:
 
 # 📸 Dashboard Preview
 
+
 ## Executive Summary
 
-> *(Add Executive Summary screenshot here)*
+![Executive Summary](Dashboard%20Screenshots/Executive%20Summary.jpeg)
 
 ---
 
 ## Business Analysis
 
-> *(Add Business Analysis screenshot here)*
+![Business Analysis](Dashboard%20Screenshots/Business%20Analysis.jpeg)
 
 ---
 
