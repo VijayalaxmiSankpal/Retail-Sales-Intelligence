@@ -1,155 +1,377 @@
 # 📊 Retail Sales Intelligence Dashboard
 
-An interactive **Power BI Business Intelligence Dashboard** built using the **Superstore dataset** to analyze sales, profitability, customer behavior, regional performance, and product trends.
+<div align="center">
+
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi)
+![Python](https://img.shields.io/badge/Python-Data%20Audit-blue?logo=python)
+![PostgreSQL](https://img.shields.io/badge/SQL-Analysis-blue?logo=postgresql)
+![Excel](https://img.shields.io/badge/Excel-Dataset-green?logo=microsoft-excel)
+
+### Business Intelligence Dashboard for Retail Sales & Profit Analysis
+
+Transforming raw retail sales data into actionable business insights through interactive dashboards and data analysis.
+
+</div>
 
 ---
 
-## 📌 Project Overview
+# 📖 Project Overview
 
-Retail businesses generate thousands of transactions every year. Converting this raw data into meaningful business insights helps organizations make informed decisions.
+Retail Sales Intelligence is an end-to-end Business Intelligence project built using **Power BI** and **Python**.
 
-This dashboard provides a comprehensive overview of:
+The project analyzes sales performance, profitability, customer purchasing behavior, regional performance, and product trends using a real-world retail dataset.
 
-- Overall Sales Performance
-- Profitability Analysis
+The objective is to help business stakeholders make better decisions through interactive dashboards and meaningful KPIs.
+
+---
+
+# 🎯 Business Problem
+
+Retail companies generate thousands of sales transactions every day.
+
+Without proper analysis, it becomes difficult to answer questions such as:
+
+- Which products generate the highest profit?
+- Which regions perform best?
+- Which customer segments contribute the most revenue?
+- Where are losses occurring?
+- Which categories should receive more business focus?
+
+This dashboard answers these questions through interactive visualizations.
+
+---
+
+# 📊 Dashboard Pages
+
+## 📈 Executive Summary
+
+Provides a high-level overview of business performance.
+
+Main KPIs include:
+
+- Total Sales
+- Total Profit
+- Total Orders
+- Profit Margin
 - Customer Segments
 - Regional Performance
-- Product Performance
-- Business Recommendations
 
 ---
 
-## 🎯 Business Objectives
+## 📉 Business Analysis
 
-- Monitor overall business performance
-- Identify profitable and loss-making products
-- Analyze customer purchasing behavior
-- Compare regional sales and profit
-- Support strategic business decision-making
+Provides detailed analysis including:
 
----
-
-## 🛠️ Tech Stack
-
-- Power BI
-- Power Query
-- DAX
-- Microsoft Excel
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-
----
-
-# 📈 Dashboard Features
-
-## Executive Summary
-
-- KPI Cards
-- Monthly Sales Trend
-- Monthly Profit Trend
 - Sales by Category
-- Profit by Category
-- Sales by Customer Segment
+- Sales by Sub-Category
 - Profit by Region
-- Sales by State Map
-- Top 10 Products
-- Profit by Ship Mode
-- Executive Insights
-
----
-
-## Business Analysis
-
-- Top 10 Products by Profit
-- Bottom 10 Products by Profit
-- Bottom 10 States by Profit
-- Profit by Segment
-- Profit by Sub-category
-- Top Customers by Sales
-- Business Recommendations
+- Monthly Sales Trend
+- Top Products
+- Customer Insights
+- State-wise Performance
 
 ---
 
 # 📸 Dashboard Preview
 
-
 ## Executive Summary
 
-![Executive Summary](Dashboard%20Screenshots/Executive%20Summary.jpeg)
+![Executive Summary](./Dashboard%20Screenshots/Executive%20Summary.jpeg)
 
 ---
 
 ## Business Analysis
 
-![Business Analysis](Dashboard%20Screenshots/Business%20Analysis.jpeg)
+![Business Analysis](./Dashboard%20Screenshots/Business%20Analysis.jpeg)
 
 ---
 
-# 📊 Key Business Insights
+# 📌 Key Business KPIs
 
-- Technology generated the highest overall sales.
-- Consumer segment contributed the highest profit.
-- West region achieved the strongest profitability.
-- November recorded peak sales.
-- A few products consistently generated losses despite strong sales.
-- Standard Class shipping contributed the highest overall profit.
-
----
-
-# 💡 Business Recommendations
-
-- Increase inventory before seasonal demand.
-- Reduce excessive discounting.
-- Re-evaluate consistently loss-making products.
-- Improve performance in low-profit regions.
-- Continue investing in high-performing product categories.
+- Total Revenue
+- Total Profit
+- Profit Margin
+- Total Orders
+- Average Order Value
+- Customer Segments
+- Regional Sales
+- Product Category Performance
 
 ---
 
-# 📂 Repository Structure
+# 🐍 Python Data Audit
 
-```
-Retail-Sales-Intelligence
+Before building the dashboard, the dataset was validated using Python to ensure data quality and consistency.
+
+The data audit included:
+
+- Dataset Shape Analysis
+- Data Type Verification
+- Missing Value Detection
+- Duplicate Record Identification
+- Statistical Summary
+- Data Integrity Checks
+
+Python libraries used:
+
+- Pandas
+- NumPy
+
+Example output:
+
+- Dataset Dimensions
+- Missing Values Report
+- Duplicate Records Report
+- Summary Statistics
+
+---
+
+## Python Audit Preview
+
+![Python Data Audit](./Dashboard%20Screenshots/python-data-audit1.jpeg)
+![Python Data Audit](./Dashboard%20Screenshots/python-data-audit2.jpeg)
+
+---
+
+# 💡 Business Insights
+
+The dashboard helps answer important business questions such as:
+
+### 📦 Product Performance
+
+- Which product categories generate the highest revenue?
+- Which sub-categories are the most profitable?
+
+---
+
+### 🌍 Regional Analysis
+
+- Best performing regions
+- Low-performing regions
+- Regional profit comparison
+
+---
+
+### 👥 Customer Insights
+
+- Customer segment contribution
+- Sales distribution by segment
+- High-value customers
+
+---
+
+### 📈 Sales Trends
+
+- Monthly sales growth
+- Seasonal trends
+- Profit fluctuations
+
+---
+
+### 💰 Profitability
+
+- High-profit products
+- Loss-making products
+- Profit margin analysis
+
+---
+
+# 🛠 Technology Stack
+
+| Tool | Purpose |
+|------|---------|
+| Power BI | Dashboard Development |
+| Python | Data Audit |
+| Pandas | Data Cleaning & Validation |
+| NumPy | Numerical Analysis |
+| Excel | Source Dataset |
+| Git & GitHub | Version Control |
+
+---
+
+# 📂 Project Structure
+
+```text
+Retail-Sales-Intelligence/
+
 │
-├── Dashboard
+
+├── Dashboard/
 │   └── Retail-Sales-Intelligence.pbix
 │
-├── Data
+├── Dashboard Screenshots/
+│   ├── Executive Summary.jpeg
+│   ├── Business Analysis.jpeg
+│   └── python-data-audit.jpeg
+│
+├── Data/
 │   ├── Superstore Raw Dataset.xls
 │   └── Superstore Cleaned Dataset.csv
 │
-├── Python Analysis
+├── Python Analysis/
 │   └── data_audit.ipynb
 │
-├── Dashboard Screenshots
-│   ├── Executive Summary.jpeg
-│   └── Business Analysis.jpeg
-│
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── LICENSE
 ```
 
 ---
 
-# 🚀 Future Improvements
+# 📁 Dataset
 
-- Drill-through pages
-- Forecasting
+Dataset contains information including:
+
+- Orders
+- Customers
+- Products
+- Sales
+- Profit
+- Quantity
+- Discount
+- Shipping Mode
+- Categories
+- Sub-Categories
+- Regions
+- States
+
+The dataset was cleaned and validated before visualization.
+
+---
+
+# 🚀 Running the Project
+
+### Python
+
+```bash
+pip install -r requirements.txt
+```
+
+Run
+
+```bash
+jupyter notebook
+```
+
+Open
+
+```
+Python Analysis/data_audit.ipynb
+```
+
+---
+
+### Power BI
+
+Open
+
+```
+Dashboard/Retail-Sales-Intelligence.pbix
+```
+
+using Microsoft Power BI Desktop.
+
+---
+
+# 🌟 Project Highlights
+
+This project demonstrates a complete Business Intelligence workflow:
+
+- Data Collection
+- Data Validation using Python
+- Dashboard Design in Power BI
+- KPI Development
+- Business Insight Generation
+- Interactive Data Visualization
+- GitHub Project Documentation
+
+---
+
+# 📈 Future Improvements
+
+Potential enhancements include:
+
+- Live Database Integration
+- SQL Server Connection
+- Automated Data Refresh
+- Forecasting using Time Series Analysis
 - Customer Lifetime Value Analysis
-- Predictive Analytics
-- RFM Customer Segmentation
+- Market Basket Analysis
+- Predictive Sales Analytics
+- Executive Mobile Dashboard
+
+---
+
+# 📚 Skills Demonstrated
+
+## Business Intelligence
+
+- Dashboard Design
+- KPI Development
+- Business Storytelling
+- Executive Reporting
+
+---
+
+## Data Analytics
+
+- Data Cleaning
+- Data Validation
+- Exploratory Data Analysis
+- Descriptive Statistics
+
+---
+
+## Technical Skills
+
+- Power BI
+- Python
+- Pandas
+- NumPy
+- Excel
+- Git
+- GitHub
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
 
 ---
 
 # 👩‍💻 Author
 
-**Vijayalaxmi Sankpal**
+## Vijayalaxmi Sankpal
 
-- Aspiring Data Analyst
-- Skilled in SQL, Python, Power BI, Excel, and Full Stack Development
+Aspiring Data Analyst | Full Stack Developer
+
+📧 Email
+
+vijayalaxmisankpal@gmail.com
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/vijayalaxmi-sankpal-b99b4a25b
+
+💻 GitHub
+
+https://github.com/VijayalaxmiSankpal
 
 ---
 
-⭐ If you found this project interesting, consider giving it a star!
+# ⭐ Support
+
+If you found this project helpful or interesting, consider giving it a ⭐ on GitHub.
+
+It motivates future improvements and helps others discover the project.
+
+---
+
+<div align="center">
+
+### 📊 Turning Data into Business Decisions
+
+Built with ❤️ using Power BI, Python and Data Analytics.
+
+</div>
